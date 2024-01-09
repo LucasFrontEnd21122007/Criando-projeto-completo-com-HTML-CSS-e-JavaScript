@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <img src="./img/FrontEndProject.png">
+    <title>Martinez Delivery</title>
+</head>
+<body>
+    <header>
+        <h1>Martinez Delivery</h1>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <!-- Lista de itens do menu -->
+            <ul id="menu-list">
+                <li data-id="1">Item 1 - R$10</li>
+                <li data-id="2">Item 2 - R$15</li>
+                <li data-id="3">Item 3 - R$8</li>
+                <!-- Adicione mais itens conforme necessário -->
+            </ul>
+        </section>
+
+        <section id="cart">
+            <h2>Carrinho</h2>
+            <!-- Lista de itens no carrinho -->
+            <ul id="cart-list"></ul>
+            <p>Total: R$<span id="total">0.00</span></p>
+            <button onclick="checkout()">Finalizar Pedido</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plataforma de Delivery</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
